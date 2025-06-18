@@ -51,8 +51,6 @@ Develop SQL-based analytics to deliver detailed insights into:
 
 These insights empower stakeholders with key business metrics, enabling strategic decision-making.  
 
-For more details, refer to [docs/requirements.md](docs/requirements.md).
-
 ## 📂 Repository Structure
 ```
 data-warehouse-project/
@@ -85,7 +83,8 @@ This project is licensed under the [MIT License](LICENSE). You are free to use, 
 
 ## 🌟 About Me
 
-Hi there! I'm **Baraa Khatib Salkini**, also known as **Data With Baraa**. I’m an IT professional and passionate YouTuber on a mission to share knowledge and make working with data enjoyable and engaging!
+Hi, I’m **Swapnonil Ghosh**, a final-year ECE undergraduate at NIT Agartala with a passion for tech and problem-solving, currently exploring data analytics.
+Always eager to learn, build, and turn data into decisions.
 
 Let's stay in touch! Feel free to connect with me on the following platforms:
 

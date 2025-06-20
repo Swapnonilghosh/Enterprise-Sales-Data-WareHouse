@@ -1,6 +1,26 @@
-# Data Warehouse and Analytics Project
+## Data Warehouse & Analytics Project
 
-This project demonstrates the end-to-end lifecycle of building a modern data warehouse and running advanced analytics on business data using **SQL Server**. From ingesting raw datasets to designing a star schema and generating deep analytical insights — the goal is to showcase how raw data can be turned into decision-driving dashboards.
+This project showcases the complete workflow of building a modern data warehouse and performing advanced business analysis using SQL Server. From raw data ingestion to structured analytics, the project walks through real-world BI processes step by step.
+
+### Why this project?
+
+In today’s data-driven world, organizations rely on clean and structured data to make decisions. This project simulates a realistic data pipeline to:
+
+- design a layered architecture using the Medallion approach (bronze, silver, gold)
+- implement ETL pipelines to process CRM and ERP data
+- run exploratory and advanced SQL analysis for insights
+- build analytical datasets ready for BI tools like Power BI, Tableau, or Excel
+
+### Real-world context
+
+A mid-sized company is trying to merge data from sales and customer systems to analyze:
+
+- sales performance over time  
+- customer behavior and segmentation  
+- product-level revenue and profitability  
+- key KPIs like recency, quantity sold, and AOV  
+
+This project delivers those insights using SQL-powered data engineering and analytics.
 ---
 ## 🏗️ Data Architecture
 

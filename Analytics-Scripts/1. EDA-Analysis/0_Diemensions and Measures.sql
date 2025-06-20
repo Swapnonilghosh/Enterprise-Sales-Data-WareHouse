@@ -1,0 +1,3 @@
+SELECT DISTINCT
+sales_amount
+FROM gold.fact_sales

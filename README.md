@@ -57,41 +57,45 @@ data-warehouse-project/
 │
 ├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
 │
-├── docs/                               # Project documentation and architecture details
-│   ├── etl.drawio                      # Draw.io file shows all different techniquies and methods of ETL
-│   ├── data_architecture.drawio        # Draw.io file shows the project's architecture
-│   ├── data_catalog.md                 # Catalog of datasets, including field descriptions and metadata
-│   ├── data_flow.drawio                # Draw.io file for the data flow diagram
-│   ├── data_models.drawio              # Draw.io file for data models (star schema)
-│   ├── naming-conventions.md           # Consistent naming guidelines for tables, columns, and files
+├── docs/                               # Project documentation and architecture diagrams
+│   ├── Data_Architecture.drawio        # Medallion architecture (Bronze, Silver, Gold)
+│   ├── Data_Architecture.drawio.png
+│   ├── Data Flow Diagram.drawio        # Full ETL/data movement pipeline
+│   ├── Data Flow Diagram.drawio.png
+│   ├── Integration Model.drawio        # How ERP & CRM data are merged and structured
+│   ├── Integration Model.drawio.png
+│   ├── Star Schema (Data Mart).drawio  # Final analytical data model for reporting
+│   ├── Data Catalog.md                 # Describes tables, fields, types, and business meaning
+│   ├── Naming Convention.md            # Consistent naming standards across tables and files
 │
-├── scripts/                            # SQL scripts for ETL and transformations
-│   ├── bronze/                         # Scripts for extracting and loading raw data
-│   ├── silver/                         # Scripts for cleaning and transforming data
-│   ├── gold/                           # Scripts for creating analytical models
+├── scripts/                            # SQL scripts for ETL and data modeling
+│   ├── bronze/                         # Load raw ERP & CRM data into staging tables
+│   ├── silver/                         # Clean, normalize, and join datasets for unified structure
+│   ├── gold/                           # Build final fact and dimension tables (star schema)
 │
-├── tests/                              # Test scripts and quality files
-├── Analytics-script/                   # SQL Scripts for EDA & advanced Analysis
-│   ├── 1. EDA-analysis/                # Scripts for Exploratory Data Analysis
-│   │   ├── 0_Dimensions & Measures
-│   │   ├── 1_Diemensions Exploration
-│   │   ├── 2_Database Exploration
-│   │   ├── 3_Date Exploration
-│   │   ├── 4_Measures Exploration
-│   │   ├── 5_Magnitude Analysis
-│   │   ├── 6_Ranking Analysis
+├── tests/                              # Data quality checks (nulls, duplicates, referential integrity)
+│
+├── Analytics-script/                   # SQL scripts for business analysis and insights
+│   ├── 1. EDA-analysis/                # Exploratory Data Analysis to understand structure and stats
+│   │   ├── 0_Dimensions & Measures     # Quick scan of key fields like sales amount
+│   │   ├── 1_Dimensions Exploration    # Explore countries, product hierarchy, etc.
+│   │   ├── 2_Database Exploration      # Explore schema metadata (tables, columns)
+│   │   ├── 3_Date Exploration          # Sales timeline and customer age range
+│   │   ├── 4_Measures Exploration      # Total sales, quantity, orders, price, customers
+│   │   ├── 5_Magnitude Analysis        # Breakdown by category, country, gender, etc.
+│   │   ├── 6_Ranking Analysis          # Top/bottom products and customers by revenue
 │   │
-│   ├── 2. Advanced-analysis/           # SQL Scripts for Advanced Data Analaysis
-│   │   ├── 1_Change_over_time_analysis 
-│   │   ├── 2_Cumulative_Analysis
-│   │   ├── 3_Perfomance_Analysis
-│   │   ├── 4_Part_to_Whole_Analysis
-│   │   ├── 5_Data_Segmentation
-│   │   ├── 6_Customer_Report
-│   │   ├── 7_Product_Report
+│   ├── 2. Advanced-analysis/           # Advanced analysis using KPIs, trends, and segmentation
+│   │   ├── 1_Change_over_time_analysis # Track sales, customers, and quantity over time
+│   │   ├── 2_Cumulative_Analysis       # Running totals and moving averages
+│   │   ├── 3_Perfomance_Analysis       # YoY performance and comparison to product average
+│   │   ├── 4_Part_to_Whole_Analysis    # % contribution of each category to total sales
+│   │   ├── 5_Data_Segmentation         # Segments customers (VIP/Regular/New) and products by cost
+│   │   ├── 6_Customer_Report           # Final view with detailed customer-level KPIs
+│   │   ├── 7_Product_Report            # Final view with detailed product-level KPIs
 │
-├── README.md                           # Project overview and instructions
-└── LICENSE                             # License information for the repository
+├── README.md                           # Project overview, architecture, and instructions
+└── LICENSE                             # License information (MIT)
 ```
 ---
 

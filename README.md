@@ -1,6 +1,8 @@
 ## Data Warehouse & Analytics Project
 
 This project showcases the complete workflow of building a modern data warehouse and performing advanced business analysis using SQL Server. From raw data ingestion to structured analytics, the project walks through real-world BI processes step by step.
+This project demonstrates the end-to-end lifecycle of building a modern data warehouse and running advanced analytics on business data using **SQL Server**. From ingesting raw datasets to designing a star schema and generating deep analytical insights — the goal is to showcase how raw data can be turned into decision-driving dashboards.
+
 
 ### Why this project?
 

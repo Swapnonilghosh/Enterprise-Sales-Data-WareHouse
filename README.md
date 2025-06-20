@@ -71,6 +71,24 @@ data-warehouse-project/
 │   ├── gold/                           # Scripts for creating analytical models
 │
 ├── tests/                              # Test scripts and quality files
+├── Analytics-script/                   # SQL Scripts for EDA & advanced Analysis
+│   ├── 1. EDA-analysis/                # Scripts for Exploratory Data Analysis
+│   │   ├── 0_Dimensions & Measures
+│   │   ├── 1_Diemensions Exploration
+│   │   ├── 2_Database Exploration
+│   │   ├── 3_Date Exploration
+│   │   ├── 4_Measures Exploration
+│   │   ├── 5_Magnitude Analysis
+│   │   ├── 6_Ranking Analysis
+│   │
+│   ├── 2. Advanced-analysis/           # SQL Scripts for Advanced Data Analaysis
+│   │   ├── 1_Change_over_time_analysis 
+│   │   ├── 2_Cumulative_Analysis
+│   │   ├── 3_Perfomance_Analysis
+│   │   ├── 4_Part_to_Whole_Analysis
+│   │   ├── 5_Data_Segmentation
+│   │   ├── 6_Customer_Report
+│   │   ├── 7_Product_Report
 │
 ├── README.md                           # Project overview and instructions
 └── LICENSE                             # License information for the repository

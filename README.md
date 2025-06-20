@@ -174,6 +174,40 @@ data-warehouse-project/
 ```
 ---
 
+### Tech Stack
+
+This project is built entirely on SQL-based technologies and leverages industry-standard practices in data warehousing and analytics.
+
+#### Core Tools & Platforms
+
+- **SQL Server (SSMS):**
+  - Used to create and manage the entire data warehouse.
+  - Handles raw data ingestion, transformation pipelines, schema modeling, and analytical queries.
+
+- **T-SQL (Transact-SQL):**
+  - The primary language for data manipulation, transformation logic, and analytical computation.
+  - Used for writing all ETL scripts and advanced analysis queries.
+
+- **CSV Files (ERP and CRM):**
+  - Flat files that serve as source systems for the warehouse.
+  - Contain structured sales, customer, and product data.
+
+- **draw.io (Diagrams):**
+  - Used to design data flow diagrams, architecture blueprints, and entity-relationship models.
+  - Helps document and visualize the data pipeline.
+
+- **Markdown / GitHub:**
+  - All documentation is written in Markdown for easy viewing.
+  - Repository is organized with clear folder structures and script segregation.
+
+#### Optional Tools (Not included in this project but compatible):
+
+- **Power BI / Tableau / Excel:**  
+  - The gold layer is designed to plug into any BI tool for dashboards and reports.
+  - Dimensional modeling ensures compatibility with self-service analytics platforms.
+
+---
+
 ## 🛡️ License
 
 This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and share this project with proper attribution.

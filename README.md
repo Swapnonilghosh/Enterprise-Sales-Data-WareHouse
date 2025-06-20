@@ -1,8 +1,8 @@
-## Data Warehouse & Analytics Project
+## 📊 Data Warehouse & Analytics Project
 
 This project demonstrates the end-to-end lifecycle of building a modern data warehouse and running advanced analytics on business data using **SQL Server (T-SQL)**. From ingesting raw datasets to designing a star schema and generating deep analytical insights — the project walks through real-world BI processes step by step.
 
-### Why this project?
+### 🎯 Why this project?
 
 In today’s data-driven world, organizations rely on clean and structured data to make decisions. This project simulates a realistic data pipeline to:
 
@@ -10,7 +10,7 @@ In today’s data-driven world, organizations rely on clean and structured data 
 - implement ETL pipelines to process CRM (Customer Relationship Management) and ERP (Enterprise Resource Planning) data
 - run exploratory and advanced SQL analysis for insights
 
-### Real-world context
+### 🌐 Real-world context
 
 A mid-sized company is trying to merge data from sales and customer systems to analyze:
 
@@ -20,7 +20,9 @@ A mid-sized company is trying to merge data from sales and customer systems to a
 - key KPIs like recency, quantity sold, and AOV  
 
 This project delivers those insights using SQL-powered data engineering and analytics.
+
 ---
+
 ## 🏗️ Data Architecture
 
 The data architecture for this project follows Medallion Architecture **Bronze**, **Silver**, and **Gold** layers:
@@ -31,7 +33,8 @@ The data architecture for this project follows Medallion Architecture **Bronze**
 3. **Gold Layer**: Houses business-ready data modeled into a star schema required for reporting and analytics.
 
 ---
-## Project Overview
+
+## 🧭 Project Overview
 
 This project demonstrates a complete data warehousing and analytics pipeline using SQL Server. It focuses on transforming raw sales and customer data into clean, structured datasets that support deep business analysis.
 
@@ -54,13 +57,13 @@ All logic is written in modular SQL scripts organized by purpose, making the pip
 
 ---
 
-### Project Requirements
+## 📋 Project Requirements
 
 This project is split into two key domains — building the data warehouse (data engineering) and performing analysis (data analytics). Each component plays a role in transforming raw data into reliable business insights.
 
 ---
 
-#### 1. Data Engineering — Building the Data Warehouse
+#### 1. 🏗️ Data Engineering — Building the Data Warehouse
 
 **Objective:**  
 Design and implement a modern data warehouse using SQL Server that integrates and transforms data from multiple business systems to support decision-making.
@@ -94,7 +97,7 @@ Design and implement a modern data warehouse using SQL Server that integrates an
 
 ---
 
-#### 2. Data Analytics — BI & Reporting
+#### 2. 📊 Data Analytics — BI & Reporting
 
 **Objective:**  
 Use SQL to explore the cleaned data and generate business insights across customer, product, and sales domains.
@@ -126,8 +129,44 @@ Use SQL to explore the cleaned data and generate business insights across custom
 
 All analysis is done through raw SQL and written in modular scripts, structured for scalability and transparency.
 
-## 📂 Repository Structure
-```
+---
+
+## ⚙️ Tech Stack
+
+This project is built entirely on SQL-based technologies and leverages industry-standard practices in data warehousing and analytics.
+
+#### Core Tools & Platforms
+
+- **SQL Server (SSMS):**
+  - Used to create and manage the entire data warehouse.
+  - Handles raw data ingestion, transformation pipelines, schema modeling, and analytical queries.
+
+- **T-SQL (Transact-SQL):**
+  - The primary language for data manipulation, transformation logic, and analytical computation.
+  - Used for writing all ETL scripts and advanced analysis queries.
+
+- **CSV Files (ERP and CRM):**
+  - Flat files that serve as source systems for the warehouse.
+  - Contain structured sales, customer, and product data.
+
+- **draw.io (Diagrams):**
+  - Used to design data flow diagrams, architecture blueprints, and entity-relationship models.
+  - Helps document and visualize the data pipeline.
+
+- **Markdown / GitHub:**
+  - All documentation is written in Markdown for easy viewing.
+  - Repository is organized with clear folder structures and script segregation.
+
+#### Optional Tools (Not included in this project but compatible):
+
+- **Power BI / Tableau / Excel:**  
+  - The gold layer is designed to plug into any BI tool for dashboards and reports.
+  - Dimensional modeling ensures compatibility with self-service analytics platforms.
+
+---
+
+## 📁 Repository Structure
+```plaintext
 data-warehouse-project/
 │
 ├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
@@ -172,39 +211,6 @@ data-warehouse-project/
 ├── README.md                           # Project overview, architecture, and instructions
 └── LICENSE                             # License information (MIT)
 ```
----
-
-### Tech Stack
-
-This project is built entirely on SQL-based technologies and leverages industry-standard practices in data warehousing and analytics.
-
-#### Core Tools & Platforms
-
-- **SQL Server (SSMS):**
-  - Used to create and manage the entire data warehouse.
-  - Handles raw data ingestion, transformation pipelines, schema modeling, and analytical queries.
-
-- **T-SQL (Transact-SQL):**
-  - The primary language for data manipulation, transformation logic, and analytical computation.
-  - Used for writing all ETL scripts and advanced analysis queries.
-
-- **CSV Files (ERP and CRM):**
-  - Flat files that serve as source systems for the warehouse.
-  - Contain structured sales, customer, and product data.
-
-- **draw.io (Diagrams):**
-  - Used to design data flow diagrams, architecture blueprints, and entity-relationship models.
-  - Helps document and visualize the data pipeline.
-
-- **Markdown / GitHub:**
-  - All documentation is written in Markdown for easy viewing.
-  - Repository is organized with clear folder structures and script segregation.
-
-#### Optional Tools (Not included in this project but compatible):
-
-- **Power BI / Tableau / Excel:**  
-  - The gold layer is designed to plug into any BI tool for dashboards and reports.
-  - Dimensional modeling ensures compatibility with self-service analytics platforms.
 
 ---
 
@@ -212,11 +218,12 @@ This project is built entirely on SQL-based technologies and leverages industry-
 
 This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and share this project with proper attribution.
 
-## 🌟 About Me
+---
 
-Hi, I’m **Swapnonil Ghosh**, a final-year ECE undergraduate at NIT Agartala with a passion for tech and problem-solving, currently exploring data analytics.
+## 🙋‍♂️ About Me
+
+Hi, I’m **Swapnonil Ghosh**, a final-year ECE undergraduate at NIT Agartala with a passion for tech and problem-solving, currently exploring data analytics.  
 Always eager to learn, build, and turn data into decisions.
 
-Let's stay in touch! Feel free to connect with me on the following platforms:
-
+Let’s stay in touch! Feel free to connect with me here:  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/swapnonilg/)

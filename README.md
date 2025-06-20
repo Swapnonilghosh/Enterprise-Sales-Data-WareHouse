@@ -31,14 +31,26 @@ The data architecture for this project follows Medallion Architecture **Bronze**
 3. **Gold Layer**: Houses business-ready data modeled into a star schema required for reporting and analytics.
 
 ---
-## 📖 Project Overview
+## Project Overview
 
-This project involves:
+This project demonstrates a complete data warehousing and analytics pipeline using SQL Server. It focuses on transforming raw sales and customer data into clean, structured datasets that support deep business analysis.
 
-1. **Data Architecture**: Designing a Modern Data Warehouse Using Medallion Architecture **Bronze**, **Silver**, and **Gold** layers.
-2. **ETL Pipelines**: Extracting, transforming, and loading data from source systems into the warehouse.
-3. **Data Modeling**: Developing fact and dimension tables optimized for analytical queries.
-4. **Analytics & Reporting**: Creating SQL-based reports and dashboards for actionable insights.
+The process includes:
+
+- Designing a layered data warehouse using the Medallion Architecture (bronze, silver, gold)
+- Implementing ETL pipelines to extract, clean, and load data from multiple source systems
+- Building a star schema with fact and dimension tables for optimized analytical queries
+- Running exploratory and advanced SQL analysis to extract meaningful insights from the gold layer
+
+The analytics portion covers both EDA (Exploratory Data Analysis) and advanced techniques such as:
+
+- Change-over-time and trend analysis  
+- Cumulative and moving aggregates  
+- Year-over-year product performance comparison  
+- Customer segmentation (VIP, Regular, New)  
+- Product performance classification (High, Mid, Low)
+
+All logic is written in modular SQL scripts organized by purpose, making the pipeline reusable, transparent, and easy to maintain.
 
 ---
 

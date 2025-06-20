@@ -54,31 +54,77 @@ All logic is written in modular SQL scripts organized by purpose, making the pip
 
 ---
 
-## 🚀 Project Requirements
+### Project Requirements
 
-### Building the Data Warehouse (Data Engineering)
-
-#### Objective
-Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
-
-#### Specifications
-- **Data Sources**: Import data from two source systems (ERP and CRM) provided as CSV files.
-- **Data Quality**: Cleanse and resolve data quality issues prior to analysis.
-- **Integration**: Combine both sources into a single, user-friendly data model designed for analytical queries.
-- **Scope**: Focus on the latest dataset only; historization of data is not required.
-- **Documentation**: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
+This project is split into two key domains — building the data warehouse (data engineering) and performing analysis (data analytics). Each component plays a role in transforming raw data into reliable business insights.
 
 ---
 
-### BI: Analytics & Reporting (Data Analysis)
+#### 1. Data Engineering — Building the Data Warehouse
 
-#### Objective
-Develop SQL-based analytics to deliver detailed insights into:
-- **Customer Behavior**
-- **Product Performance**
-- **Sales Trends**
+**Objective:**  
+Design and implement a modern data warehouse using SQL Server that integrates and transforms data from multiple business systems to support decision-making.
 
-These insights empower stakeholders with key business metrics, enabling strategic decision-making.  
+**Key Deliverables:**
+
+- **Source Data Ingestion:**  
+  - Load raw data from two business systems (ERP and CRM), both provided as CSV files.
+  - Maintain the raw format in the bronze layer without transformation for auditability.
+
+- **Data Quality & Cleansing:**  
+  - Detect and handle missing values, inconsistent formats, and duplicates.
+  - Standardize field values (e.g., country codes, date formats, product categories).
+
+- **Data Transformation (Silver Layer):**  
+  - Normalize and join related datasets (e.g., customer data from CRM + transaction data from ERP).
+  - Ensure referential integrity between keys across tables.
+
+- **Star Schema Modeling (Gold Layer):**  
+  - Design and create fact and dimension tables.
+  - Implement surrogate keys, date dimensions, and type consistency for fast querying.
+  - Focus on a sales-centric star schema: `fact_sales` + related dimensions (`dim_customers`, `dim_products`, etc.)
+
+- **Scope Consideration:**  
+  - Work with the latest snapshot of data.
+  - No requirement for historization or slowly changing dimensions in this project.
+
+- **Documentation:**  
+  - Prepare entity-relationship diagrams and flowcharts to explain the pipeline clearly.
+  - Maintain a data catalog to define the structure and semantics of all tables and fields.
+
+---
+
+#### 2. Data Analytics — BI & Reporting
+
+**Objective:**  
+Use SQL to explore the cleaned data and generate business insights across customer, product, and sales domains.
+
+**Analytical Scope:**
+
+- **Exploratory Data Analysis (EDA):**  
+  - Understand key fields, measures, and data ranges.  
+  - Explore customer locations, product hierarchies, date coverage, and overall volume.
+
+- **Business Metric Calculation:**  
+  - Compute total revenue, order count, quantity sold, average selling price, customer base size, and more.
+
+- **Breakdown Analysis:**  
+  - Group metrics by category, region, gender, or customer/product segments.
+  - Identify high-performing products or countries.
+
+- **Trend & Time-Series Analysis:**  
+  - Monitor how sales, customers, and orders evolve over time (monthly/yearly).
+  - Analyze seasonality or spikes using trend reports.
+
+- **Customer & Product Segmentation:**  
+  - Classify customers as VIP, Regular, or New based on behavior and lifespan.
+  - Segment products by revenue and cost ranges.
+
+- **Performance Reporting:**  
+  - Compare product performance year-over-year and against average performance.
+  - Calculate KPIs like recency, lifespan, average order value, and monthly spending.
+
+All analysis is done through raw SQL and written in modular scripts, structured for scalability and transparency.
 
 ## 📂 Repository Structure
 ```

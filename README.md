@@ -1,4 +1,4 @@
-## 📊 Data Warehouse & Analytics Project
+## 📊 Enterprise Data Warehouse & Analytics Project
 
 This project demonstrates the end-to-end lifecycle of building a modern data warehouse and running advanced analytics on business data using **SQL Server (T-SQL)**. From ingesting raw datasets to designing a star schema and generating deep analytical insights — the project walks through real-world BI processes step by step.
 

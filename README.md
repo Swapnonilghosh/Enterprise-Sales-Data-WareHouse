@@ -88,7 +88,7 @@ Design and implement a modern data warehouse using SQL Server that integrates an
 ---
 ## 📁 Repository Structure
 ```plaintext
-data-warehouse-project/
+Enterprise-Sales-Data-WareHouse/
 │
 ├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
 │
